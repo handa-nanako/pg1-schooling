@@ -21,21 +21,9 @@ require 'json'
 qa1 = JSON[File.read('qa1.json'), symbolize_names: true]
 qa(qa1)
 
-qa2 = {
-    title: "黄色い果物は?",
-    a1: "1 オレンジ",
-    a2: "2 りんご",
-    a3: "3 バナナ",
-    num: 3
-  }
-
-qa3 = {
-    title: "この中で一番首の長い動物は？",
-    a1: "パンダ",
-    a2: "ウサギ",
-    a3: "キリン",
-    num: 3
-}
-
+qa2 = JSON[File.read('qa2.json'), symbolize_names: true]
 qa(qa2)
+
+qa3 = JSON[File.read('qa3.json'), symbolize_names: true]
 qa(qa3)
+
